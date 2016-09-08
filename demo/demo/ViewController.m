@@ -25,29 +25,15 @@
                     
 - (IBAction)btnClick:(id)sender {
     
-    
-    
+
     [FCAlertView FCAlertWithTitle:@"" cancelName:@"" determineName:@"" preferredStyle:FCAlertStyleStyleAlert cancel:^{
         NSLog(@"1111111");
         
     } determine:^{
-       
+        
         NSLog(@"2222222");
     }];
-
-    
-    __block NSString *str = @"";
-    [FCAlertView FCAlertAddTextFieldWithTitle:@"" cancelName:@"" determineName:@"" textFIeld:^(UITextField *textField) {
         
-        str = textField.text;
-        NSLog(@"1111111---------%@",str);
-    } cancel:^{
-        NSLog(@"2222222---------%@",str);
-        
-    } determine:^{
-        NSLog(@"3333333---------%@",str);
-    }];
-    
    
 }
 - (IBAction)bottomBtnClick:(id)sender {

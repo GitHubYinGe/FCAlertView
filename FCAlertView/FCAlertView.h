@@ -50,5 +50,5 @@ typedef NS_ENUM(NSInteger, FCAlertStyle) {
                         determineName:(NSString *)determineName
                         textFIeld:(void (^)(UITextField *textField))setUpTextField
                         cancel:(void(^)())cancel
-                        determine:(void(^)())determine;;
+                        determine:(void(^)())determine;
 @end

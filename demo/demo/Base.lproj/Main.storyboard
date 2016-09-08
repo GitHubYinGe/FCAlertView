@@ -40,7 +40,6 @@
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6F0-3n-ZKi"/>
                                     <action selector="textFieldBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQK-9M-uSg"/>
                                 </connections>
                             </button>
@@ -55,7 +54,6 @@
                                 </state>
                                 <connections>
                                     <action selector="bottomBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZi-6u-LNy"/>
-                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0bH-1Z-gHq"/>
                                 </connections>
                             </button>
                         </subviews>
