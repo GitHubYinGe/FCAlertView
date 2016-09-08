@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRH-uv-INn">
+                                <rect key="frame" x="110" y="120" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="bGR-IP-WLc"/>
+                                    <constraint firstAttribute="height" constant="50" id="rg0-bk-syS"/>
+                                </constraints>
+                                <state key="normal" title="中间样式">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uhs-LN-2ed"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Noy-ec-S8k">
+                                <rect key="frame" x="85" y="280" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WOb-i6-39t"/>
+                                    <constraint firstAttribute="width" constant="150" id="pkS-Kd-H1W"/>
+                                </constraints>
+                                <state key="normal" title="有textField 样式">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6F0-3n-ZKi"/>
+                                    <action selector="textFieldBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQK-9M-uSg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIk-SE-HmM">
+                                <rect key="frame" x="110" y="200" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="R5e-Ph-TGj"/>
+                                    <constraint firstAttribute="width" constant="100" id="ba8-cg-TPM"/>
+                                </constraints>
+                                <state key="normal" title="底部样式">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="bottomBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZi-6u-LNy"/>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0bH-1Z-gHq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Noy-ec-S8k" firstAttribute="top" secondItem="ZIk-SE-HmM" secondAttribute="bottom" constant="30" id="1MJ-zN-Pmt"/>
+                            <constraint firstItem="ZIk-SE-HmM" firstAttribute="top" secondItem="HRH-uv-INn" secondAttribute="bottom" constant="30" id="SlZ-x7-5Ia"/>
+                            <constraint firstItem="Noy-ec-S8k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tca-Px-1oj"/>
+                            <constraint firstItem="HRH-uv-INn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VaP-GS-55T"/>
+                            <constraint firstItem="ZIk-SE-HmM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xtq-4k-WY5"/>
+                            <constraint firstItem="HRH-uv-INn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="q4l-Oj-gnH"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="237"/>
+        </scene>
+    </scenes>
+</document>
